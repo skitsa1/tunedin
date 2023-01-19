@@ -77,7 +77,7 @@ class _SpeedometerAppState extends State<SpeedometerApp> {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
-      title: 'Voice Speedometer',
+      title: 'Speedometer',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
