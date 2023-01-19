@@ -116,7 +116,7 @@ class _DashScreenState extends State<DashScreen> {
       (Position updatedPosition) {
         _velocity = updatedPosition.speed;
         if (_velocity! > _highestVelocity!) _highestVelocity = _velocity;
-        _velocityUpdatedStreamController.add(_velocity);
+        _velocityUpdatedStreamController.add(_velocity!);
       },
     );
   }
@@ -142,7 +142,7 @@ class _DashScreenState extends State<DashScreen> {
         markerId: const MarkerId('source'),
         position: LatLng(_latitude!, _longitude!),
         icon: await getMarkerIcon(
-          "images/user.png",
+          "images/users.png",
           const Size(150.0, 150.0),
           convertedVelocity(speed)?.round(),
         ),
